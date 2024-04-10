@@ -1,0 +1,24 @@
+.standard-content h1 {
+  @apply mb-6 text-2xl font-bold;
+}
+.standard-content h2 {
+  @apply mb-4 mt-8 text-lg font-bold;
+}
+.standard-content h3 {
+  @apply mb-2 mt-4 underline;
+}
+.standard-content h4 {
+  @apply my-2 italic;
+}
+.standard-content p {
+  @apply py-2 text-justify;
+}
+.standard-content a {
+  @apply underline;
+}
+.standard-content ul {
+  @apply my-2 ml-8 list-disc space-y-2;
+}
+.standard-content ol {
+  @apply my-2 ml-8 list-decimal space-y-2;
+}

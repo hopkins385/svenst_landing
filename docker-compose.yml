@@ -1,0 +1,22 @@
+version: '3.9'
+name: svenst_landing
+
+services:
+  app:
+    container_name: svenst_landing
+    restart: unless-stopped
+    working_dir: /app
+    build:
+      context: .
+      dockerfile: Dockerfile
+    env_file:
+      - .env
+    security_opt:
+      - no-new-privileges:true
+    networks:
+      - app_net
+
+networks:
+  app_net:
+    name: svenst_landing_network
+    driver: bridge

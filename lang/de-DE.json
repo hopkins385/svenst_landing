@@ -1,0 +1,83 @@
+{
+  "nav": {
+    "home": "Home",
+    "products": "Produkte",
+    "about": "Über mich",
+    "services": "Dienstleistungen",
+    "blog": "Blog",
+    "contact": "Kontakt",
+    "imprint": "Impressum",
+    "privacy": "Datenschutz",
+    "cta": "Termin buchen"
+  },
+  "default": {
+    "meta": {
+      "title": "Generative AI solutions for your business",
+      "description": "Generative AI solutions for your business"
+    }
+  },
+  "home": {
+    "meta": {
+      "title": "Generative AI solutions for your business",
+      "description": "Generative AI solutions for your business"
+    },
+    "hero": {
+      "titleHighlight": "Gemeinsam",
+      "title": "erwecken wir Ihre Generative KI Vision zum Leben.",
+      "subtitle": "Ich bin leidenschaftlicher Software-Ingenieur, Unternehmer und begeisterter Technikfan aus Düsseldorf. Zusammen entwickeln wir maßgeschneiderte KI-Lösungen, die Ihre Prozesse optimieren, Kosten senken und Ihre Wettbewerbsfähigkeit stärken.",
+      "cta": "Lassen Sie uns über Ihr Projekt sprechen",
+      "slogan": "Aus Ideen\nwird Realität",
+      "floatText1": "Generative KI Lösungen",
+      "floatText2": "Software Entwicklung",
+      "floatText3": "Unternehmensberatung",
+      "floatText4": "Workshops und Schulungen"
+    },
+    "value": {
+      "title1": "Ich bin Ihre",
+      "titleHighlight": "all-in-one",
+      "title2": "Projekt Lösung",
+      "subtitle": "",
+      "cta": "",
+      "slogan": "Das unterscheidet\nmich von anderen"
+    }
+  },
+  "about": {
+    "meta": {
+      "title": "Über mich",
+      "description": "Über mich"
+    },
+    "intro": {
+      "title": "Hi, ich bin Sven - Ihr Partner für Generative KI Lösungen"
+    },
+    "career": {
+      "title": "Meine berufliche\nLaufbahn\nbisher"
+    }
+  },
+  "showcase": {
+    "title": "Meine GenAI Produkte",
+    "subtitle": "Mein Ziel ist es, effektive digitale Lösungen zu schaffen, die das Leben der Menschen einfacher und besser machen."
+  },
+  "contact": {
+    "meta": {
+      "title": "Contact",
+      "description": "Contact page"
+    }
+  },
+  "imprint": {
+    "meta": {
+      "title": "Imprint",
+      "description": "Imprint page"
+    }
+  },
+  "lang": {
+    "switch": "Wechseln zu:"
+  },
+  "cookie": {
+    "title": "Cookies auf dieser Webseite",
+    "text": "Diese Webseite verwendet Cookies, um Ihnen ein best mögliches Surfen zu ermöglichen. Für weitere Informationen, wie wir Cookies verwenden, lesen Sie bitte unsere",
+    "link": "Datenschutzerklärung",
+    "hint": "Mit Klick auf 'Alle Akzeptieren' stimmen Sie der Verwendung aller Cookies zu.",
+    "accept": "Alle Akzeptieren",
+    "decline": "Ablehnen"
+  }
+}

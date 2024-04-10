@@ -1,0 +1,82 @@
+{
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "services": "Services",
+    "blog": "Blog",
+    "contact": "Contact",
+    "imprint": "Imprint",
+    "privacy": "Privacy",
+    "cta": "Book a Call"
+  },
+  "default": {
+    "meta": {
+      "title": "Generative AI solutions for your business",
+      "description": "Generative AI solutions for your business"
+    }
+  },
+  "home": {
+    "meta": {
+      "title": "Generative AI solutions for your business",
+      "description": "Generative AI solutions for your business"
+    },
+    "hero": {
+      "titleHighlight": "Helping",
+      "title": "businesses turn Generative AI ideas into reality",
+      "subtitle": "I'm a passionate software engineer, entrepreneur, and general technology enthusiast living in Düsseldorf, Germany. I've worked with big tech companies to help them develop their ideas into profitable solutions.",
+      "cta": "Book a call with me",
+      "slogan": "Turning ideas\ninto reality",
+      "floatText1": "Generative AI Solutions",
+      "floatText2": "Software Engineering",
+      "floatText3": "Management Consulting",
+      "floatText4": "Workshops and Training"
+    },
+    "value": {
+      "title1": "I am your",
+      "titleHighlight": "all-in-one",
+      "title2": "project solution",
+      "subtitle": "",
+      "cta": "",
+      "slogan": "What differentiates\nme from others"
+    }
+  },
+  "about": {
+    "meta": {
+      "title": "About me",
+      "description": "About me"
+    },
+    "intro": {
+      "title": "Hi, I'm Sven - your partner for Generative AI solutions"
+    },
+    "career": {
+      "title": "My career\njourney so far"
+    }
+  },
+  "showcase": {
+    "title": "Check out my GenAI Products",
+    "subtitle": "My goal is to create effective digital solutions that make people’s lives easier and better."
+  },
+  "contact": {
+    "meta": {
+      "title": "Contact",
+      "description": "Contact page"
+    }
+  },
+  "imprint": {
+    "meta": {
+      "title": "Imprint",
+      "description": "Imprint page"
+    }
+  },
+  "lang": {
+    "switch": "Change to:"
+  },
+  "cookie": {
+    "title": "Cookies on this website",
+    "text": "This website uses cookies to provide you with the best possible browsing experience. For more information on how we use cookies, please read our",
+    "link": "Privacy Policy",
+    "hint": "By clicking on ‘Accept All’, you agree to the use of all cookies.",
+    "accept": "Accept All",
+    "decline": "Decline"
+  }
+}

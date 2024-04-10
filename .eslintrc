@@ -1,0 +1,17 @@
+{
+  "root": true,
+  "parser": "vue-eslint-parser",
+  "extends": [
+    "eslint:recommended",
+    "plugin:tailwindcss/recommended",
+    "plugin:security-node/recommended",
+    "plugin:vue/recommended",
+    "plugin:json/recommended-with-comments",
+    "@nuxtjs/eslint-config-typescript",
+    "prettier"
+  ],
+  "rules": {
+    "vue/no-multiple-template-root": "off",
+    "tailwindcss/no-custom-classname": "off",
+  }
+}
