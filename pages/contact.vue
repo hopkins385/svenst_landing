@@ -4,6 +4,7 @@
   import {
     LoaderCircleIcon,
     CheckCircleIcon,
+    CircleXIcon,
     MailIcon,
     PhoneIcon,
   } from 'lucide-vue-next';
@@ -15,7 +16,6 @@
   });
 
   const appConfig = useAppConfig();
-
   const typedFormSchema = toTypedSchema(contactFormSchema);
 
   const form = useForm({
@@ -51,9 +51,8 @@
   <SectionContainer>
     <div class="grid gap-32 lg:grid-cols-2">
       <div class="size-full bg-slate-50">
-        <h1 class="text-6xl font-semibold">
-          How can I help you? <br />
-          Let's get in touch.
+        <h1 class="whitespace-pre-wrap text-6xl font-semibold">
+          {{ $t('contact.title') }}
         </h1>
         <div class="flex border-0 py-14 lg:justify-end">
           <NuxtImg
@@ -69,9 +68,11 @@
               <MailIcon class="size-6 stroke-1.5 text-sky-600" />
             </div>
             <div class="w-full">
-              <span class="text-base font-semibold">Email Me</span>
+              <span class="text-base font-semibold">{{
+                $t('contact.emailme.title')
+              }}</span>
               <p class="pb-6 pt-4">
-                I will usually email you back within an hour
+                {{ $t('contact.emailme.subtitle') }}
               </p>
               <NuxtLink
                 :to="appConfig.social.email"
@@ -86,15 +87,19 @@
               <PhoneIcon class="size-6 stroke-1.5 text-sky-600" />
             </div>
             <div class="w-full">
-              <span class="text-base font-semibold">Schedule a Call</span>
-              <p class="pb-6 pt-4">I’m available weekdays from 9AM to 5PM</p>
+              <span class="text-base font-semibold">
+                {{ $t('contact.callme.title') }}
+              </span>
+              <p class="pb-6 pt-4">
+                {{ $t('contact.callme.subtitle') }}
+              </p>
               <NuxtLink
                 :to="appConfig.social.calendar"
                 :external="true"
                 target="_blank"
                 class="text-base text-sky-600 hover:underline"
               >
-                Calendar
+                {{ $t('contact.callme.cta') }}
               </NuxtLink>
             </div>
           </div>
@@ -104,9 +109,17 @@
         <div v-if="success">
           <div class="flex items-center gap-3">
             <CheckCircleIcon class="size-8 shrink-0" />
-            <h2 class="text-3xl font-semibold">
-              Your message has been sent successfully.
-            </h2>
+            <span class="text-3xl font-semibold">
+              {{ $t('contact.form.success') }}
+            </span>
+          </div>
+        </div>
+        <div v-else-if="submitError">
+          <div class="flex items-center gap-3">
+            <CircleXIcon class="size-8 shrink-0" />
+            <span class="text-3xl font-semibold">
+              {{ $t('contact.form.error') }}
+            </span>
           </div>
         </div>
         <form v-else class="space-y-5" @submit="onSubmit">
@@ -138,10 +151,10 @@
           </FormField>
           <FormField v-slot="{ componentField }" name="message">
             <FormItem>
-              <FormLabel>Message</FormLabel>
+              <FormLabel>{{ $t('contact.form.message') }}</FormLabel>
               <FormControl>
                 <Textarea
-                  placeholder="Enter your message here..."
+                  :placeholder="$t('contact.form.placeholder')"
                   v-bind="componentField"
                   class="h-40"
                 />
@@ -151,7 +164,7 @@
           </FormField>
           <FormField v-slot="{ componentField }" type="radio" name="type">
             <FormItem class="space-y-3">
-              <FormLabel>Expected Service</FormLabel>
+              <FormLabel>{{ $t('contact.form.services.title') }}</FormLabel>
 
               <FormControl>
                 <RadioGroup
@@ -162,14 +175,8 @@
                     <FormControl>
                       <RadioGroupItem value="consulting" />
                     </FormControl>
-                    <FormLabel class="font-normal"> Consulting </FormLabel>
-                  </FormItem>
-                  <FormItem class="flex items-center gap-x-3 space-y-0">
-                    <FormControl>
-                      <RadioGroupItem value="training" />
-                    </FormControl>
                     <FormLabel class="font-normal">
-                      Workshop / Training
+                      {{ $t('contact.form.services.consulting') }}
                     </FormLabel>
                   </FormItem>
                   <FormItem class="flex items-center gap-x-3 space-y-0">
@@ -177,20 +184,32 @@
                       <RadioGroupItem value="software" />
                     </FormControl>
                     <FormLabel class="font-normal">
-                      Software Development
+                      {{ $t('contact.form.services.software') }}
+                    </FormLabel>
+                  </FormItem>
+                  <FormItem class="flex items-center gap-x-3 space-y-0">
+                    <FormControl>
+                      <RadioGroupItem value="training" />
+                    </FormControl>
+                    <FormLabel class="font-normal">
+                      {{ $t('contact.form.services.workshop') }}
                     </FormLabel>
                   </FormItem>
                   <FormItem class="flex items-center gap-x-3 space-y-0">
                     <FormControl>
                       <RadioGroupItem value="all" />
                     </FormControl>
-                    <FormLabel class="font-normal"> All from above </FormLabel>
+                    <FormLabel class="font-normal">
+                      {{ $t('contact.form.services.all') }}
+                    </FormLabel>
                   </FormItem>
                   <FormItem class="flex items-center gap-x-3 space-y-0">
                     <FormControl>
                       <RadioGroupItem value="other" />
                     </FormControl>
-                    <FormLabel class="font-normal"> Other </FormLabel>
+                    <FormLabel class="font-normal">
+                      {{ $t('contact.form.services.other') }}
+                    </FormLabel>
                   </FormItem>
                 </RadioGroup>
               </FormControl>
@@ -205,7 +224,7 @@
               v-if="isLoading"
               class="mr-2 size-5 animate-spin stroke-1.5"
             />
-            Submit
+            {{ $t('contact.form.button') }}
           </Button>
         </form>
       </div>

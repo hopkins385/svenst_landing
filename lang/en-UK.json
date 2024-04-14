@@ -2,6 +2,7 @@
   "nav": {
     "home": "Home",
     "about": "About",
+    "products": "Products",
     "services": "Services",
     "blog": "Blog",
     "contact": "Contact",
@@ -49,7 +50,12 @@
       "title": "Hi, I'm Sven - your partner for Generative AI solutions"
     },
     "career": {
-      "title": "My career\njourney so far"
+      "title": "My career\njourney so far",
+      "hint": "I am currently here\nin my journey :D"
+    },
+    "techstack": {
+      "title": "My tech-stack for modern software solutions",
+      "subtitle": "With extensive experience in a wide range of technologies, I offer tailored solutions to meet your requirements. Discover my preferred tools and frameworks that help me develop efficient, scalable, and innovative software."
     }
   },
   "showcase": {
@@ -60,6 +66,34 @@
     "meta": {
       "title": "Contact",
       "description": "Contact page"
+    },
+    "title": "How can I help you?\nLet's get in touch.",
+    "emailme": {
+      "title": "Email Me",
+      "subtitle": "I will usually email you back within an hour",
+      "cta": ""
+    },
+    "callme": {
+      "title": "Schedule a Call",
+      "subtitle": "I’m available weekdays from 9AM to 5PM",
+      "cta": "Calendar"
+    },
+    "form": {
+      "name": "Name",
+      "email": "Email",
+      "message": "Message",
+      "placeholder": "Your message here...",
+      "button": "Send",
+      "success": "Your message has been sent successfully.",
+      "error": "An error occurred while sending the message.",
+      "services": {
+        "title": "Expected Service",
+        "consulting": "Consulting",
+        "workshop": "Workshop / Training",
+        "software": "Software Engineering",
+        "all": "All from above",
+        "other": "Other"
+      }
     }
   },
   "imprint": {

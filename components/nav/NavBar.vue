@@ -28,7 +28,7 @@
             {{ $t('nav.products') }}
           </NuxtLinkLocale>
         </li>
-        <li>
+        <li class="hidden">
           <NuxtLinkLocale to="services" class="hover:underline">
             {{ $t('nav.services') }}
           </NuxtLinkLocale>
@@ -37,16 +37,6 @@
           <NuxtLinkLocale to="about" class="hover:underline">
             {{ $t('nav.about') }}
           </NuxtLinkLocale>
-        </li>
-        <li class="hidden">
-          <NuxtLink
-            :to="appConfig.social.blog"
-            :external="true"
-            target="_blank"
-            class="hover:underline"
-          >
-            {{ $t('nav.blog') }}
-          </NuxtLink>
         </li>
         <li>
           <NuxtLinkLocale to="contact" class="hover:underline">

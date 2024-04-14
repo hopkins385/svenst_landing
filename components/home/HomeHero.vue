@@ -7,7 +7,6 @@
     PresentationIcon,
     SquareGanttChartIcon,
   } from 'lucide-vue-next';
-
   import FunArrowSvg from '~/assets/svg/undraw_fun-arrow.svg';
 
   const appConfig = useAppConfig();

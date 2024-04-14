@@ -2,15 +2,6 @@
   import { CookieIcon } from 'lucide-vue-next';
   const consent = consentStore();
 
-  /*
-      :class="[
-      'fixed inset-x-0 bottom-0 z-[200] w-full duration-700 sm:bottom-4 sm:right-4 sm:max-w-md',
-      !isOpen
-        ? 'translate-y-8 opacity-0 transition-[opacity,transform]'
-        : 'translate-y-0 opacity-100 transition-[opacity,transform]',
-      hide && 'hidden',
-    ]"
-    */
   onBeforeMount(() => {
     consent.init();
   });
@@ -43,13 +34,13 @@
         <div
           class="flex gap-2 border-t border-border p-4 py-5 dark:bg-background/20"
         >
-          <Button class="w-full" @click="consent.allAccepted()">
+          <Button class="w-full" @click="() => consent.allAccepted()">
             {{ $t('cookie.accept') }}
           </Button>
           <Button
             class="w-full"
             variant="secondary"
-            @click="consent.closeModal()"
+            @click="() => consent.closeModal()"
           >
             {{ $t('cookie.decline') }}
           </Button>

@@ -50,7 +50,12 @@
       "title": "Hi, ich bin Sven - Ihr Partner für Generative KI Lösungen"
     },
     "career": {
-      "title": "Meine berufliche\nLaufbahn\nbisher"
+      "title": "Meine berufliche\nLaufbahn\nbisher",
+      "hint": "Ich bin derzeit hier\nin meiner Reise :D"
+    },
+    "techstack": {
+      "title": "Mein Tech-Stack für moderne Softwarelösungen",
+      "subtitle": "Mit langjähriger Erfahrung in einer breiten Palette von Technologien biete ich maßgeschneiderte Lösungen für Ihre Anforderungen. Entdecken Sie meine bevorzugten Tools und Frameworks, die mir helfen, effiziente, skalierbare und innovative Software zu entwickeln."
     }
   },
   "showcase": {
@@ -59,8 +64,36 @@
   },
   "contact": {
     "meta": {
-      "title": "Contact",
-      "description": "Contact page"
+      "title": "Kontakt",
+      "description": "Kontaktseite"
+    },
+    "title": "Wie kann ich Ihnen helfen?",
+    "emailme": {
+      "title": "Email",
+      "subtitle": "Ich werde Ihnen normalerweise innerhalb einer Stunde antworten",
+      "cta": ""
+    },
+    "callme": {
+      "title": "Meeting",
+      "subtitle": "Ich bin wochentags (Mo - Fr) von 9 bis 17 Uhr erreichbar",
+      "cta": "Kalender"
+    },
+    "form": {
+      "name": "Name",
+      "email": "E-Mail",
+      "message": "Nachricht",
+      "placeholder": "Ihre Nachricht an mich...",
+      "button": "Senden",
+      "success": "Ihre Nachricht wurde erfolgreich gesendet.",
+      "error": "Beim Senden der Nachricht ist ein Fehler aufgetreten.",
+      "services": {
+        "title": "Gewünschte Dienstleistung",
+        "consulting": "Beratung",
+        "workshop": "Workshop / Training",
+        "software": "Softwareentwicklung",
+        "all": "Alles von oben",
+        "other": "Sonstiges"
+      }
     }
   },
   "imprint": {

@@ -1,4 +1,6 @@
 <script setup lang="ts">
+  import FunArrowSvg from '~/assets/svg/undraw_fun-arrow.svg';
+
   definePageMeta({
     title: 'about.meta.title',
     desription: 'about.meta.description',
@@ -17,7 +19,8 @@
       date: '2009 - 2013',
       company: 'TH Cologne',
       title: 'Bachelor of Science',
-      description: 'Electrical engineering and information technology.',
+      description:
+        'Studied electrical engineering and automatisation technics.',
     },
     {
       icon: 'ford',
@@ -44,7 +47,7 @@
       icon: 'whu',
       date: '03/2021 - 11/2022',
       company: 'WHU',
-      title: 'MBA',
+      title: 'Master of Business Administration',
       description: 'Studied business administration.',
     },
     {
@@ -180,7 +183,14 @@
         </h2>
       </div>
       <div class="relative col-span-2 grid grid-cols-2 gap-x-10 gap-y-20">
-        <div class="absolute bottom-10 right-96 border">here</div>
+        <div class="absolute bottom-5 right-52 flex -rotate-12">
+          <FunArrowSvg
+            class="mr-8 mt-5 -rotate-45 -scale-x-100 text-7xl opacity-70"
+          />
+          <span class="whitespace-pre-wrap font-gochi text-2xl text-slate-600">
+            {{ $t('about.career.hint') }}
+          </span>
+        </div>
         <CareerStep
           v-for="step in carrerSteps"
           :key="step.date"
@@ -201,13 +211,9 @@
         />
       </div>
       <div>
-        <h2 class="text-5xl font-bold">My stack for modern web applications</h2>
+        <h2 class="text-5xl font-bold">{{ $t('about.techstack.title') }}</h2>
         <p class="py-10">
-          Qui in amet consequat in. Eu consequat ullamco aliqua et. Laborum est
-          fugiat ex adipisicing commodo mollit sint do non nulla. Lorem
-          voluptate aute ut veniam adipisicing mollit dolor sunt ipsum veniam ea
-          aute. Magna sunt dolore sunt. Lorem laborum mollit amet anim ad velit
-          sunt aliquip in sunt ipsum.
+          {{ $t('about.techstack.subtitle') }}
         </p>
         <div class="relative grid grid-cols-2 gap-10">
           <StackItem
