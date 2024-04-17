@@ -1,4 +1,5 @@
 import type { H3Event } from 'h3';
+import { validateEmail } from './validateEmail';
 import { contactFormSchema } from '~/schemas';
 
 export async function getContactRequestBody(event: H3Event) {
@@ -11,6 +12,16 @@ export async function getContactRequestBody(event: H3Event) {
       statusCode: 400,
       statusMessage: 'Bad Request',
       message: JSON.stringify(result.error.issues),
+    });
+  }
+
+  const isValidEmail = await validateEmail(result.data.email);
+
+  if (!isValidEmail) {
+    throw createError({
+      statusCode: 400,
+      statusMessage: 'Bad Request',
+      message: 'Invalid email address',
     });
   }
 
